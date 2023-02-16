@@ -1,14 +1,16 @@
 import React,{Component} from 'react';
 import './App.css';
 import ReactSetState from './component/ClassComponent/ReactSetState';
+import MapArray from './component/ClassComponent/MappedArray';
+import LifeCycleMethod from './component/ClassComponent/LifeCycleMethod';
 class App extends Component{
 
   render(){
     return (
       <div className="App">
-        <header className="App-header">
           <ReactSetState />
-        </header>
+          <MapArray />
+          <LifeCycleMethod />
       </div>
     );
   }

@@ -1,6 +1,4 @@
 import React,{Component} from 'react';
-import logo from '../../logo.svg';
-
 class ReactSetState extends Component{
 
   constructor(){
@@ -14,9 +12,8 @@ class ReactSetState extends Component{
   render(){
     return (
       <div>
-      <img src={logo} className="App-logo" alt="logo" />
-          <p>Hi {this.state.name}, I work at {this.state.company}</p>
-           
+        <h1>Using setState and Secondary Callback</h1>
+          <p>Hi {this.state.name}, I work at {this.state.company}</p>           
           <button onClick={() => {this.setState(
             () => {
               return {
