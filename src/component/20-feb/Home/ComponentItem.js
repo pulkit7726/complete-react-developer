@@ -1,14 +1,7 @@
 import React from 'react';
-import './Home.scss'
+import './ComponentItem.scss';
 
- const Home = () => {
-    const categories = [
-        {id:1, title: 'Hats', imageUrl: 'https://i.ibb.co/cvpntL1/hats.png'},
-        {id:1, title: 'Jackets', imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png'},
-        {id:1, title: 'Sneakers', imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png'},
-        {id:1, title: 'Womens', imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png'},
-        {id:1, title: 'Mens', imageUrl: 'https://i.ibb.co/R70vBrQ/mens.png'},
-    ]
+ const ComponentItem = ({categories}) => {
 
   return (
     <div className='categories-container'>
@@ -28,4 +21,4 @@ import './Home.scss'
     </div>
   )
 }
-export default Home
+export default ComponentItem

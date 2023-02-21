@@ -1,18 +1,21 @@
 import React,{Component} from 'react';
 import './App.css';
-import ReactSetState from './component/ClassComponent/ReactSetState';
-import MapArray from './component/ClassComponent/MappedArray';
-import LifeCycleMethod from './component/ClassComponent/LifeCycleMethod';
-import Home from './component/20-feb/Home/Home';
+import { Route, Routes, Outlet } from 'react-router-dom';
+import Home from './component/21-feb/Home/Home';
+import Navigation from './component/21-feb/Navigaion/Navigation';
 
-import InputSearch from './component/17-Feb/InputSearch';
-
+const Shop = () => {
+  return <h1>Shop Now...</h1>
+}
 
 const App = () => {
   return (
-    <div className="App">
-        <Home />
-    </div>
+    <Routes>
+      <Route path='/' element={<Navigation />}>
+        <Route path='/' element={<Home />} />
+        <Route path='/shop' element={<Shop />} />
+      </Route>
+    </Routes>
   );
 }
 
