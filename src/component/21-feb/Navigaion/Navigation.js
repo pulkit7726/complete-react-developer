@@ -11,7 +11,8 @@ const Navigation = () => {
                 <Crown className='logo'/>
             </Link>
             <div className='links-container'>
-            <Link className='nav-link' to='/shop'>Shop</Link>
+              <Link className='nav-link' to='/shop'>SHOP</Link>
+              <Link className='nav-link' to='/signin'>SIGN IN</Link>
             </div>
         </div>
         <Outlet />
